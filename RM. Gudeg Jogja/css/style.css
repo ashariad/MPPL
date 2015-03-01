@@ -86,6 +86,29 @@
 				opacity: 1.0;
 			}
 	
+	.thumb1
+	{
+		height : 293px;
+		display: block;
+		position: absolute;
+		padding : 5% 7% 3% 27%;
+		text-align: justify;
+		text-justify: inter-word;
+		background: #1a1f2c;
+		background: rgba(255,255,255,0.25);
+	}
+		.thumb h2
+		{
+			position: absolute;
+			margin : auto;
+			background: #1a1f2c;
+			background: rgba(18,21,29,0.85);
+			
+			font-weight: 300;
+			line-height: 10;
+			z-index: 2;
+		}
+	
 	.thumb
 	{
 		display: block;
