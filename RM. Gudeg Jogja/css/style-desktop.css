@@ -264,3 +264,24 @@
 			{
 				content: "\00d7";
 			}
+
+	#top_nav 
+	{
+		float:right;
+		padding:40px 37px 0 575px
+	}
+	
+	#top_nav li 
+	{
+		float:left;
+		padding:4px 26px 5px 0;
+		margin-right:25px;
+		background:url(../images/top_line.png) right 0 no-repeat
+	}
+	
+	#top_nav .end 
+	{
+		padding-right:0;
+		margin-right:0;
+		background:none
+	}
