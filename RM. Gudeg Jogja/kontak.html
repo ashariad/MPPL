@@ -31,7 +31,32 @@
 						<a href="index2.html"><img src="images/rm.jpg" style="border-radius:400px"></a>
 					</div>
 					<article class="item thumb1" data-width="282">
-						<h2>Bisnis kuliner ini berawal dari sekedar iseng. Sejak tahun 1997, bisnis ini bermulai dari berjualan gudeg yogya di sekitar Jalan Pekayon, Bekasi, tidak jauh dari tempatnya sekarang membuka usaha rumah makannya. Ternyata lama kelamaan banyak yang suka dan merasa cocok. Dan akhirnya terbentuklah restoran ini.</h2>
+						<form id="ContactForm" action="query/register_query.php" method="post">
+						<div>
+							<div class="wrapper">
+								<span style="color:white">Nama :</span>
+								<input type="text" name="nama" class="input" style="color:green">
+							</div>
+							<div class="wrapper">
+								<span style="color:white">Email :</span>
+								<input type="text" name="jk"class="input" style="color:green">
+							</div>
+							<div class="wrapper">
+								<span style="color:white">No.Kontak :</span>
+								<input type="text" name="username" class="input" style="color:green">
+							</div>
+							<div class="wrapper">
+								<span style="color:white">Alamat :</span>
+								<input type="password" name="password" class="input" style="color:green">
+							</div>
+							<div class="textarea_box">
+								<span style="color:white">Pesan :</span>
+								<textarea type="textarea" name="alamat" cols="1" rows="1" style="color:green"></textarea>
+							</div>
+							<a href="#" class="button2 color3" onClick="document.getElementById('ContactForm').submit()" style="text-decoration:none">Send</a>
+							<a href="#" class="button2 color3" onClick="document.getElementById('ContactForm').reset()" style="text-decoration:none">Clear</a>
+						</div>
+					</form>
 					</article>
 				</div>
 			</div>

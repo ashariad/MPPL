@@ -323,3 +323,60 @@
 		margin-right:0;
 		background:none
 	}
+
+	#ContactForm 
+	{
+		width:585px;
+		overflow:hidden;
+		padding-bottom:36px
+	}
+
+	#ContactForm .wrapper 
+	{
+		height:26px
+	}
+
+	#ContactForm span 
+	{
+		float:left;
+		width:105px;
+		line-height:24px
+	}
+
+	#ContactForm .textarea_box 
+	{
+		width:100%;
+		overflow:hidden;
+		min-height:103px;
+		padding-bottom:5px
+	}
+
+	#ContactForm a 
+	{
+		margin-left:10px;
+		width:72px;
+		text-align:center;
+		float:right
+	}
+
+	#ContactForm .input 
+	{
+		width:470px;
+		padding:10px 5px;
+		color:#575652;
+		font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+		height:14px
+	}
+
+	#ContactForm textarea 
+	{
+		overflow:auto;
+		width:470px;
+		padding:10px 5px;
+		color:#575652;
+		font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+		height:91px;
+		margin-top: 5px
+	}
+
+	.button2.color3 {background-image:url(../images/button3_bg.gif)}
