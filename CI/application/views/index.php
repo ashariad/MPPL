@@ -11,15 +11,21 @@
 		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/style-noscript.css" />
+		</noscript>
 		
 	</head>
-	<body style="background: url('images/background.jpg')">
+	<body style="background: url('foto/background.jpg')">
 
 		<div id="wrapper">
 
 			<div id="logo" >
 						<article class="item thumb" data-width="175" style="border-radius:400px">
-							<a href="index2.html"><img src="images/rm2.png" style="border-radius:400px"></a>
+							<a href="index2.html"><img src="foto/rm2.png" style="border-radius:400px"></a>
 						</article>
 				
 			</div>
