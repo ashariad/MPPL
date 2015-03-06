@@ -19,13 +19,13 @@
 		</noscript>
 		
 	</head>
-	<body style="background: url('foto/background.jpg')">
+	<body style="background: url('images/background.jpg')">
 
 		<div id="wrapper">
 
 			<div id="logo" >
 						<article class="item thumb" data-width="175" style="border-radius:400px">
-							<a href="index2.html"><img src="foto/rm2.png" style="border-radius:400px"></a>
+							<a href="index"><img src="images/rm2.png" style="border-radius:400px"></a>
 						</article>
 				
 			</div>
