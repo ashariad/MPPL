@@ -19,12 +19,16 @@
 		</noscript>
 	</head>
 	<body>
-	<div id="wrapper1">
+	<div id="wrapper">
 		<nav>
 		<ul id="top_nav">
-				<li><a href="index2.html" style="text-decoration:none ; color:white">HOME</a></li>
+				<li><a href="story" style="text-decoration:none ; color:white">OUR STORY</a></li>
+				<li><a href="cabang" style="text-decoration:none ; color:white">BRANCH</a></li>
+				<li><a href="kontak" style="text-decoration:none ; color:white">CONTACT US</a></li>
 		</ul>
 		</nav>
+	<div id="wrapper1">
+		
 			<div id="main1">
 				<div id="reel1">
 					<div id="logo1">
@@ -55,7 +59,7 @@
 					</ul>
 				</div>
 			</div>
-
+			</div>
 		</div>
 	</body>
 </html>
