@@ -43,103 +43,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin</a>
+                <a class="navbar-brand" href="index.html">Gudeg Prambanan Control Panel</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu message-dropdown">
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>John Smith</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="message-footer">
-                            <a href="#">Read All New Messages</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu alert-dropdown">
-                        <li>
-                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                        </li>
-                        <li>
-                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">View All</a>
-                        </li>
-                    </ul>
-                </li>
+                
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
                         <li>
                             <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
@@ -149,41 +60,13 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li>
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-                    </li>
-                    <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-                    </li>
+                    
                     <li class="active">
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Menu Makanan</a>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">Dropdown Item</a>
+                                <a href="tables.html"><i class="fa fa-fw fa-table"></i>Feedback</a>
                             </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                    </li>
-                    <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -197,23 +80,87 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Forms
+                            Menu Makanan
                         </h1>
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
                             </li>
                             <li class="active">
-                                <i class="fa fa-edit"></i> Forms
+                                <i class="fa fa-edit"></i> Menu Makanan
                             </li>
+                            
                         </ol>
                     </div>
                 </div>
                 <!-- /.row -->
 
                 <div class="row">
-                    <div class="col-lg-6">
-                    <h2>Daftar Makanan</h2>
+                <div class="col-lg-12">
+                    <div class="panel panel-green">
+                            <div class="panel-heading">
+                    <h3 class="panel-title">Daftar Makanan</h3>
+                        </div>
+                        <div class="panel-body">
+                    <?php 
+                                    $i=0;
+                                    foreach ($listData->result() as $row) {
+
+                                    ?>
+
+                    <div class="col-sm-4">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><?= $row->id_makanan ?> || <?= $row->nama ?></h3>
+                            </div>
+                            <div class="panel-body">
+                                <?= $row->deskripsi ?>
+
+                                <img alt="Thumbnail image" src="<?='foto/'.$row->img_name.'_thumb'.$row->ext;?>">
+                            </div>
+                        </div>
+                    </div>
+
+
+<?php $i++;} ?>
+</div>
+                    </div></div>
+                <div class="col-lg-12">
+                <div class="panel panel-primary">
+                            <div class="panel-heading">
+                    <h3 class="panel-title">Tambah Makanan</h3>
+                </div>
+                <?php echo form_open_multipart('makanan/do_upload');?>
+                <div class="panel-body">
+
+                        <form role="form" method="post" action="">
+
+                            <div class="form-group">
+                                <label>ID Makanan</label>
+                                <input class="form-control" type="text" name="id_makanan">
+                            </div>
+                            <div class="form-group">
+                                <label>Nama Makanan</label>
+                                <input class="form-control" type="text" name="nama_makanan">
+                            </div>
+                            <div class="form-group">
+                                <label>Dekripsi Makanan</label>
+                                <textarea class="form-control" rows="3" type="text" name="deskripsi"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Foto Makanan</label>
+                                <input type="file" name="userfile" size="20" />
+                            </div>
+                            <input class="btn btn-primary" type="submit" value="Submit" name="upload" />
+                        </form>
+                        </div>
+                        </div>
+                        </div>
+
+
+                    
+                    <!--<h2>Daftar Makanan</h2>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>
@@ -225,81 +172,29 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>/index.html</td>
-                                        <td>1265</td>
-                                        <td>32.3%</td>
-                                        <td>$321.33</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/about.html</td>
-                                        <td>261</td>
-                                        <td>33.3%</td>
-                                        <td>$234.12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/sales.html</td>
-                                        <td>665</td>
-                                        <td>21.3%</td>
-                                        <td>$16.34</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog.html</td>
-                                        <td>9516</td>
-                                        <td>89.3%</td>
-                                        <td>$1644.43</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/404.html</td>
-                                        <td>23</td>
-                                        <td>34.3%</td>
-                                        <td>$23.52</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/services.html</td>
-                                        <td>421</td>
-                                        <td>60.3%</td>
-                                        <td>$724.32</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog/post.html</td>
-                                        <td>1233</td>
-                                        <td>93.2%</td>
-                                        <td>$126.34</td>
-                                    </tr>
+                                    <?php 
+                                    $i=0;
+                                    foreach ($listData->result() as $row) {
+
+                                    ?>
+              <tr>
+                <td><?= $row->id_makanan ?></td>
+                <td><?= $row->nama ?></td>
+                <td><?= $row->deskripsi ?></td>
+                <td><img alt="Thumbnail image" src="<?='foto/'.$row->img_name.'_thumb'.$row->ext;?>"></td>
+              </tr>
+
+              <?php $i++;} ?>
                                 </tbody>
                             </table>
                         </div>
                         
+                        </div>-->
+                    
+                    
+                        
 
-                    </div>
-                    <div class="col-lg-6">
-                        <h1>Tambah Makanan</h1>
-
-                        <form role="form">
-
-                            <div class="form-group">
-                                <label>ID Makanan</label>
-                                <input class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label>Nama Makanan</label>
-                                <input class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label>Dekripsi Makanan</label>
-                                <textarea class="form-control" rows="3"></textarea>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label>Foto Makanan</label>
-                                <input type="file">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit Button</button>
-
-                        </form>
-
-                    </div>
+                    
                 </div>
                 <!-- /.row -->
 
