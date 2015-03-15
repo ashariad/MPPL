@@ -37,7 +37,8 @@
 						<a href="index2.html"><img src="images/rm2.png" style="border-radius:400px"></a>
 					</div>
 					<article class="item thumb1" data-width="282">
-						<form id="ContactForm" action="query/register_query.php" method="post">
+
+						<form id="ContactForm" action="kontak/InsertFeedback" method="post">
 						<div>
 							<div class="wrapper">
 								<span style="color:white">Nama :</span>
@@ -45,19 +46,11 @@
 							</div>
 							<div class="wrapper">
 								<span style="color:white">Email :</span>
-								<input type="text" name="jk"class="input" style="color:green">
-							</div>
-							<div class="wrapper">
-								<span style="color:white">No.Kontak :</span>
-								<input type="text" name="username" class="input" style="color:green">
-							</div>
-							<div class="wrapper">
-								<span style="color:white">Alamat :</span>
-								<input type="password" name="password" class="input" style="color:green">
+								<input type="text" name="email"class="input" style="color:green">
 							</div>
 							<div class="textarea_box">
 								<span style="color:white">Pesan :</span>
-								<textarea type="textarea" name="alamat" cols="1" rows="1" style="color:green"></textarea>
+								<textarea type="textarea" name="pesan" cols="1" rows="1" style="color:green"></textarea>
 							</div>
 							<a href="#" class="button2 color3" onClick="document.getElementById('ContactForm').submit()" style="text-decoration:none">Send</a>
 							<a href="#" class="button2 color3" onClick="document.getElementById('ContactForm').reset()" style="text-decoration:none">Clear</a>
