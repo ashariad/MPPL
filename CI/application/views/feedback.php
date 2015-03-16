@@ -61,10 +61,10 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     
-                    <li class="active">
+                    <li>
                         <a href="makanan"><i class="fa fa-fw fa-edit"></i> Menu Makanan</a>
                     </li>
-                    <li>
+                    <li class="active">
                                 <a href="feedback"><i class="fa fa-fw fa-table"></i>Feedback</a>
                             </li>
                 </ul>
@@ -80,14 +80,14 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Menu Makanan
+                            Feedback
                         </h1>
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
                             </li>
                             <li class="active">
-                                <i class="fa fa-edit"></i> Menu Makanan
+                                <i class="fa fa-table"></i> Feedback
                             </li>
                             
                         </ol>
@@ -97,78 +97,22 @@
 
                 <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-green">
-                            <div class="panel-heading">
-                    <h3 class="panel-title">Daftar Makanan</h3>
-                        </div>
-                        <div class="panel-body">
-                    <?php 
-                                    $i=0;
-                                    foreach ($listData->result() as $row) {
+                    
 
-                                    ?>
 
-                    <div class="col-sm-4">
-                        <div class="panel panel-yellow">
+                    <div class="panel panel-primary">
                             <div class="panel-heading">
-                                <h3 class="panel-title"><?= $row->id_makanan ?> || <?= $row->nama ?></h3>
+                                <h3 class="panel-title">Feedback</h3>
                             </div>
                             <div class="panel-body">
-                                <?= $row->deskripsi ?>
-
-                                <img alt="Thumbnail image" src="<?='foto/'.$row->img_name.'_thumb'.$row->ext;?>">
-                            </div>
-                        </div>
-                    </div>
-
-
-<?php $i++;} ?>
-</div>
-                    </div></div>
-                <div class="col-lg-12">
-                <div class="panel panel-primary">
-                            <div class="panel-heading">
-                    <h3 class="panel-title">Tambah Makanan</h3>
-                </div>
-                <?php echo form_open_multipart('makanan/do_upload');?>
-                <div class="panel-body">
-
-                        <form role="form" method="post" action="">
-
-                            <div class="form-group">
-                                <label>ID Makanan</label>
-                                <input class="form-control" type="text" name="id_makanan">
-                            </div>
-                            <div class="form-group">
-                                <label>Nama Makanan</label>
-                                <input class="form-control" type="text" name="nama_makanan">
-                            </div>
-                            <div class="form-group">
-                                <label>Dekripsi Makanan</label>
-                                <textarea class="form-control" rows="3" type="text" name="deskripsi"></textarea>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label>Foto Makanan</label>
-                                <input type="file" name="userfile" size="20" />
-                            </div>
-                            <input class="btn btn-primary" type="submit" value="Submit" name="upload" />
-                        </form>
-                        </div>
-                        </div>
-                        </div>
-
-
-                    
-                    <!--<h2>Daftar Makanan</h2>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>
                                     <tr>
-                                        <th>ID Makanan</th>
-                                        <th>Nama Makanan</th>
-                                        <th>Deskripsi</th>
-                                        <th>Foto</th>
+                                        <th>Nama</th>
+                                        <th>Email</th>
+                                        <th>Pesan</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -178,10 +122,9 @@
 
                                     ?>
               <tr>
-                <td><?= $row->id_makanan ?></td>
                 <td><?= $row->nama ?></td>
-                <td><?= $row->deskripsi ?></td>
-                <td><img alt="Thumbnail image" src="<?='foto/'.$row->img_name.'_thumb'.$row->ext;?>"></td>
+                <td><?= $row->email ?></td>
+                <td><?= $row->pesan ?></td>
               </tr>
 
               <?php $i++;} ?>
@@ -189,8 +132,8 @@
                             </table>
                         </div>
                         
-                        </div>-->
-                    
+                        </div>
+                    </div></div>
                     
                         
 
