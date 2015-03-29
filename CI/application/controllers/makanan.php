@@ -12,8 +12,12 @@ class makanan extends CI_Controller {
 
 	function index()
 	{
-		$data['listData'] = $this->makanan_model->getAllData();
-		$this->load->view('makanan',$data);
+		if($this->session->userdata('username'))
+		{
+			$data['listData'] = $this->makanan_model->getAllData();
+			$this->load->view('makanan',$data);
+		}
+		else redirect("login");
 	}
 	
 	function do_upload()

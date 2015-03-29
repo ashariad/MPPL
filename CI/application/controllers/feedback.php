@@ -11,8 +11,12 @@ class feedback extends CI_Controller {
 
 	function index()
 	{
-		$data['listData'] = $this->feedback_model->getFeedbackData();
-		$this->load->view('feedback',$data);
+		if($this->session->userdata('username'))
+		{
+			$data['listData'] = $this->feedback_model->getFeedbackData();
+			$this->load->view('feedback',$data);
+		}
+		else redirect("login");
 	}
 }
 

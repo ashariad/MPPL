@@ -12,8 +12,12 @@ class Admin_cabang extends CI_Controller {
 
 	public function index()
 	{
-		$data['listData'] = $this->admin_cabang_model->getAllData();
-		$this->load->view('admin_cabang',$data);
+		if($this->session->userdata('username'))
+		{
+			$data['listData'] = $this->admin_cabang_model->getAllData();
+			$this->load->view('admin_cabang',$data);
+		}
+		else redirect("login");
 	}
 
 	public function update()

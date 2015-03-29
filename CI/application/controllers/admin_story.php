@@ -12,8 +12,12 @@ class Admin_story extends CI_Controller {
 
 	public function index()
 	{
-		$data['listData'] = $this->admin_story_model->getAllData();
-		$this->load->view('admin_story',$data);
+		if($this->session->userdata('username'))
+		{
+			$data['listData'] = $this->admin_story_model->getAllData();
+			$this->load->view('admin_story',$data);
+		}
+		else redirect("login");
 	}
 
 	public function update()

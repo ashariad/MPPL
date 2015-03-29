@@ -17,9 +17,10 @@
 
   <div class="login-card">
     <h1>Log-in</h1><br>
-    <?php echo validation_errors(); ?>
-   <?php echo form_open('verifylogin'); ?>
-  <form method="post">
+    <!--<?php echo validation_errors(); ?>
+   <?php echo form_open('verifylogin'); ?>-->
+
+  <form method="post" action="<?= base_url() ?>login/cek">
     <input type="text" name="username" placeholder="Username">
     <input type="password" name="password" placeholder="Password">
     <input type="submit" name="login" class="login login-submit" value="login">
