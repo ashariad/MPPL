@@ -22,6 +22,7 @@
 	<div id="wrapper">
 		<nav>
 		<ul id="top_nav">
+				<li><a href="index" style="text-decoration:none ; color:white">HOME</a></li>
 				<li><a href="story" style="text-decoration:none ; color:white">OUR STORY</a></li>
 				<li><a href="cabang" style="text-decoration:none ; color:white">BRANCH</a></li>
 				<li><a href="kontak" style="text-decoration:none ; color:white">CONTACT US</a></li>

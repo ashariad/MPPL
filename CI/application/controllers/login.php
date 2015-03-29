@@ -30,7 +30,7 @@ class Login extends CI_Controller {
  function logout()
  {
  	$this->session->unset_userdata('username');
-	redirect("login");
+	redirect('login','refresh');
  }
 
 }
