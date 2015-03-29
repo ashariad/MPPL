@@ -6,12 +6,16 @@ class Story extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
+        $this->load->helper(array('form', 'url'));
+		$this->load->model('story_model');
+
 
     }
 
 	public function index()
 	{
-		$this->load->view('story');
+		$data['listData'] = $this->story_model->getAllData();
+		$this->load->view('story',$data);
 	}
 
 }

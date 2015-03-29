@@ -67,12 +67,13 @@
                     <li>
                                 <a href="admin_story"><i class="fa fa-fw fa-edit"></i>Our Story</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="admin_cabang"><i class="fa fa-fw fa-edit"></i>Cabang</a>
                             </li>
-                    <li class="active">
+                    <li>
                                 <a href="feedback"><i class="fa fa-fw fa-table"></i>Feedback</a>
                             </li>
+                            
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -86,14 +87,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Feedback
+                            Cabang
                         </h1>
                         <ol class="breadcrumb">
-                            <li>
-                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
-                            </li>
                             <li class="active">
-                                <i class="fa fa-table"></i> Feedback
+                                <i class="fa fa-table"></i> Cabang
                             </li>
                             
                         </ol>
@@ -108,39 +106,32 @@
 
                     <div class="panel panel-primary">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Feedback</h3>
+                                <h3 class="panel-title">Cabang</h3>
+
+                                
                             </div>
                             <div class="panel-body">
                         <div class="table-responsive">
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Nama</th>
-                                        <th>Email</th>
-                                        <th>Pesan</th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php 
-                                    $i=0;
-                                    foreach ($listData->result() as $row) {
-
-                                    ?>
-              <tr>
-                <td><?= $row->nama ?></td>
-                <td><?= $row->email ?></td>
-                <td><?= $row->pesan ?></td>
-              </tr>
-
-              <?php $i++;} ?>
-                                </tbody>
-                            </table>
+                            <div class="form-group">
+                            <form role="form" method="post" action="<?= base_url() ?>admin_cabang/update">
+                                <label>Dekripsi Story</label>
+                                <textarea class="form-control" rows="5" type="text" name="deskripsi"><?php               
+                     foreach ($listData->result() as $row) { ?><?= $row->deskripsi ?></textarea>
+                     <br>
+                     <input type="hidden" name="nrp" value="<?php echo htmlspecialchars($row->ID); ?>">
+                     <input class="btn btn-primary" type="submit" value="Update" name="submit" />
+                     <?php } ?>
+                     </form>
+                            </div>
                         </div>
                         
                         </div>
-                    </div></div>
+                    </div>
+
+
+                    </div>
                     
+
                         
 
                     

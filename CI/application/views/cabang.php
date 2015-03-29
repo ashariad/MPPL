@@ -35,10 +35,10 @@
 						<a href="index2.html"><img src="images/rm2.png" style="border-radius:400px"></a>
 					</div>
 					<article class="item thumb1" data-width="282">
-						<h2>Kami memiliki beberapa cabang, yaitu :</h2><br>
-						<h2>Jl Raya Pekayon No 6A Pekayon Jaya, Bekasi Selatan 17148 / 021-82415762</h2>
-						<h2>Jl Penegak Raya No 27 Blok 4 Rawalumbu (Jembatan 2) - Bekasi Timur / 021-82429382</h2>
-						<h2>Jl Raya Jati Mekar No 6D Jati Asih - Pondok Gede, Bekasi 17422 / 08128439636</h2>
+						<?php               
+                     foreach ($listData->result() as $row) { ?>
+                     <?= $row->deskripsi ?>
+                     <?php } ?>
 					</article>
 				</div>
 			</div>

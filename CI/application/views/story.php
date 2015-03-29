@@ -35,7 +35,11 @@
 						<a href="index2.html"><img src="images/rm2.png" style="border-radius:400px"></a>
 					</div>
 					<article class="item thumb1" data-width="282">
-						<h2>Bisnis kuliner ini berawal dari sekedar iseng. Sejak tahun 1997, bisnis ini bermulai dari berjualan gudeg yogya di sekitar Jalan Pekayon, Bekasi, tidak jauh dari tempatnya sekarang membuka usaha rumah makannya. Ternyata lama kelamaan banyak yang suka dan merasa cocok. Dan akhirnya terbentuklah restoran ini.</h2>
+						<h2><?php               
+                     foreach ($listData->result() as $row) { ?>
+                     <?= $row->deskripsi ?>
+                     <?php } ?>
+                     </h2>
 					</article>
 				</div>
 			</div>

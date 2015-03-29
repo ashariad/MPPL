@@ -31,12 +31,18 @@
 				<div id="main">
 					<div id="reel">
 					
-						<article class="item thumb" data-width="282">
-							<h2>Gudeg</h2>
-							<a href="images/1.jpg"><img src="images/1.jpg" alt=""></a>
+					<?php               
+                     foreach ($listData->result() as $row) { ?>
+              
+						<article class="item thumb" data-width="300">
+							<h2><?= $row->nama ?></h2>
+							<a href="<?='foto/'.$row->img_name.$row->ext;?>"><img src="<?='foto/'.$row->img_name.$row->ext;?>" alt=""></a>
 						</article>
+
+						<?php } ?>
 						
-						<article class="item thumb" data-width="384">
+
+						<!--<article class="item thumb" data-width="384">
 							<h2>sambal goreng krecek</h2>
 							<a href="images/2.jpg"><img src="images/2.jpg" alt=""></a>
 						</article>
@@ -114,7 +120,7 @@
 						<article class="item thumb" data-width="384">
 							<h2>aneka gorengan</h2>
 							<a href="images/17.jpg"><img src="images/17.jpg" alt=""></a>
-						</article>
+						</article>-->
 				</div>
 			</div>
 		
