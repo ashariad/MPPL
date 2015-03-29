@@ -65,6 +65,12 @@
                         <a href="makanan"><i class="fa fa-fw fa-edit"></i> Menu Makanan</a>
                     </li>
                     <li>
+                                <a href="admin_story"><i class="fa fa-fw fa-edit"></i>Our Story</a>
+                            </li>
+                            <li>
+                                <a href="admin_cabang"><i class="fa fa-fw fa-edit"></i>Cabang</a>
+                            </li>
+                    <li>
                                 <a href="feedback"><i class="fa fa-fw fa-table"></i>Feedback</a>
                             </li>
                 </ul>
@@ -97,12 +103,49 @@
 
                 <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-green">
+                     <div class="panel panel-green">
                             <div class="panel-heading">
-                    <h3 class="panel-title">Daftar Makanan</h3>
+                        <h3 class="panel-title">Daftar Makanan</h3>
                         </div>
-                        <div class="panel-body">
-                    <?php 
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        
+                                        <th>Nama Makanan</th>
+                                        <th>Deskripsi</th>
+                                        <th>Foto</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php 
+                                    
+                                    foreach ($listData->result() as $row) {
+
+                                    ?>
+              <tr>
+                <td><?= $row->nama ?></td>
+                <td><?= $row->deskripsi ?></td>
+                <td><img alt="Thumbnail image" src="<?='foto/'.$row->img_name.'_thumb'.$row->ext;?>"></td>
+                <td>
+                <form method="post" action="<?= base_url() ?>makanan/delete">
+                <input type="hidden" name="id_makanan" value="<?php echo htmlspecialchars($row->id_makanan); ?>">
+                <input class="btn btn-lg btn-danger" type="submit" value="Hapus" name="submit">
+                </td>
+                </form>
+              </tr>
+
+              <?php } ?>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        
+
+
+                        <!--<div class="panel-body">
+                        <?php 
                                     $i=0;
                                     foreach ($listData->result() as $row) {
 
@@ -122,9 +165,10 @@
                     </div>
 
 
-<?php $i++;} ?>
-</div>
-                    </div></div>
+                    <?php $i++;} ?>-->
+            </div>
+                    </div>
+                    </div>
                 <div class="col-lg-12">
                 <div class="panel panel-primary">
                             <div class="panel-heading">
@@ -154,6 +198,7 @@
                             </div>
                             <input class="btn btn-primary" type="submit" value="Submit" name="upload" />
                         </form>
+                        </div>
                         </div>
                         </div>
                         </div>

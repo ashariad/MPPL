@@ -26,5 +26,15 @@
 			makanan
 			WHERE makanan.id_makanan = foto.id_makanan");
 			return $query;
-	}
+		}
+
+		function delete($id_makanan)
+		{
+			$this->db->where('id_makanan',$id_makanan);
+			$this->db->delete('makanan');
+
+			$this->db->where('id_makanan',$id_makanan);
+			$this->db->delete('foto');
+		}
+
 }

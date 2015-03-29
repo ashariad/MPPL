@@ -76,6 +76,13 @@ class makanan extends CI_Controller {
 		$this->image_lib->resize();
 	}
 
+	function delete()
+	{
+		$id_makanan = $this->input->post('id_makanan');
+		$this->makanan_model->delete($id_makanan);
+		redirect('makanan');
+	}
+
 }
 
 /* End of file welcome.php */
